@@ -1,4 +1,4 @@
-# IoT Dashboard
+# IOT Controler
 
 This is a simple Internet of Things (IoT) dashboard built with React.js, Express.js, and MongoDB. It allows you to control and monitor multiple IoT devices, such as Raspberry Pi's and Arduinos.
 
