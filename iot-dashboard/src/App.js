@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
 import DeviceList from './components/DeviceList';
+import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
       <DeviceList />
-    </div>
+    </Container>
   );
 }
 

@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import Device from './Device';
+import { fetchDevices } from '../utils/api';
 
 const DeviceList = () => {
   const [devices, setDevices] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/devices') // replace with your server's URL
-      .then(response => response.json())
-      .then(setDevices);
+    const getDevices = async () => {
+      const data = await fetchDevices();
+      setDevices(data);
+    }
+
+    getDevices();
   }, []);
 
   return (
